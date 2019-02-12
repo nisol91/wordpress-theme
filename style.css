@@ -1,0 +1,23 @@
+/*
+Theme Name: Boolean Theme
+Theme URI: https://boolean.careers
+Author: Nicola Solzi
+Author URI: https://wordpress.org/
+Description: Tutorial per la creazione di tema wordpress.
+Requires at least: WordPress 4.9.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: booleantheme
+Tags: dev, html, php, js
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+
+h1 {
+  color: red;
+}
