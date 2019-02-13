@@ -27,6 +27,9 @@ if (!function_exists('boolean_setup')) {
     register_nav_menus(array(
       'header' => 'header'
     ));
+
+// aggiungo le immagini thumbnails nel back office
+    add_theme_support('post-thumbnails');
   }
 
   add_action('after_setup_theme', 'boolean_setup');
@@ -34,19 +37,16 @@ if (!function_exists('boolean_setup')) {
 }
 
 
-// #3 - funzione per aggiungere i widget
+// #3 - funzione per aggiungere i widget (come per esempio la sidebar)
 
-if (!function_exists('boolean_setup')) {
-  function boolean_setup() {
-    //cosi rendo disponibile un menu che si potra aggiungere all header html
-
-    register_nav_menus(array(
-      'header' => 'header'
+if (!function_exists('boolean_widgets_init')) {
+  function boolean_widgets_init() {
+    register_sidebar(array(
+      'name' => 'boolean-sidebar',
+    	'id' => 'boolean-sidebar'
     ));
   }
-
-  add_action('after_setup_theme', 'boolean_setup');
-
+  add_action('widgets_init', 'boolean_widgets_init');
 }
 
 // #4 si puo utilizzare al posto di get_excerpt() per ritornare un excerpt di lunghezza desiderata

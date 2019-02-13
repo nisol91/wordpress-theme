@@ -10725,6 +10725,10 @@ header .container .header_right ul li a {
   border-bottom: 2px solid lightgrey;
 }
 
+.post img {
+  max-width: 100%;
+}
+
 .post h4 {
   font-size: 18px;
 }
