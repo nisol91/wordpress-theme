@@ -12,3 +12,20 @@ Sarebbe meglio scrivere una funzione con return, e poi fare echo da php. -->
   </head>
   <body <?php body_class(); ?>>
   <!-- qua questa funzione aggiunge varie classi al body. se ne voglio aggiungere altre, basta scrivere nella parentesi -->
+    <header>
+      <div class="container">
+        <div class="header_left">
+          <img src="https://www.boolean.careers/images/common/logo.png" alt="">
+        </div>
+        <div class="header_right">
+          <!-- qui aggiungo il mio menu header  -->
+          <?php
+            wp_nav_menu(array(
+              'theme_location' => 'header',
+              'container' => true,
+              'menu_class' => 'nav_item',
+            ));
+          ?>
+        </div>
+      </div>
+    </header>

@@ -1,0 +1,23 @@
+.post {
+  border-bottom: 2px solid lightgrey;
+  h4 {
+    font-size: 18px;
+    ul {
+      list-style: none;
+    }
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h1 {
+    margin-top: 15px;
+  }
+  .post_titl{
+    display: flex;
+    small {
+      margin: 4% 20px;
+      font-size: 15px;
+      color: grey;
+    }
+  }
+}
